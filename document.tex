@@ -1,0 +1,59 @@
+% !TEX spellcheck=en_US
+\documentclass[a4paper]{article}
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{mathmacros/mathmacros}
+ 
+\newtheorem{lemma}{Lemma}
+\newtheorem{thm}{Theorem}
+\newtheorem{crl}{Corollary}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{exm}{Example}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% misc macros
+\newcommand*{\pref}[2]{#1 (\ref{#2})}
+ 
+\begin{document}
+ 
+\title{Homework Template}
+\author{Mazawa Shinonome \\ MATH 101}
+ 
+\maketitle
+ 
+\begin{thm}\label{my-theorem}
+Delete this text and write theorem statement here.
+\end{thm}
+ 
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+\begin{align*}
+    \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)                     \\ 
+                      & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
+                      & = \frac{k(k+1)+2(k+1)}{2}                                 \\
+                      & = \frac{(k+1)(k+2)}{2}                                    \\
+                      & = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+ 
+\begin{lemma}
+Let $n\in \mathbb{N}$. Using \pref{theorem}{my-theorem} \dots
+\end{lemma}
+ 
+\begin{proof}[Disproof]
+Blah, blah, blah.
+
+\begin{equation}\label{gradient-operator}
+    \fgrad \defines \ihat\frac{\partial}{\partial x} + \jhat\frac{\partial}{\partial y} + \khat\frac{\partial}{\partial z}
+\end{equation}
+
+\end{proof}
+ 
+\end{document}
