@@ -17,7 +17,7 @@ perl script you need to have perl installed on your system to run
 this command. Alternatively, use the `pdflatex` command.
 
 ```
-latexmk en_essay.tex -outdir=build -pdf
+latexmk document.tex -outdir=build -pdf
 ```
 
 ## Clear Cache
